@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section h2 {
+  color: #282c34;
+  font-size: 2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+ul li::before {
+  content: "🌟";
+  margin-right: 8px;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Estiliza los campos de entrada y el área de texto del formulario */
+form input, form textarea {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambia el color de fondo del botón cuando el cursor está encima */
+form button:hover {
+  background-color: #3c4048;
+}
+form input, form textarea {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+form button {
+  background-color: #3c4048;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5a5d64;
+}
+/* Estilo para las tarjetas de habilidades */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-card {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  width: 150px;
+}
+
+.skill-card img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título "Habilidades" */
+.skills-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skills-section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #128af3;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+/* Estilo base */
+.App {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Estilo oscuro */
+.App.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Botón de cambio de tema */
+.theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3c4048;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #555;
+}
+
