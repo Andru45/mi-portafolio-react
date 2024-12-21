@@ -156,4 +156,14 @@ form button:hover {
 .theme-toggle-btn:hover {
   background-color: #555;
 }
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+button:hover {
+  background-color: #4caf50; /* Cambia a un color verde al pasar el cursor */
+  transform: scale(1.1);     /* Hace que el botón crezca ligeramente */
+}
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
